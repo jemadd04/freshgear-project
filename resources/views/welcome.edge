@@ -1,111 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Fresh|Gear</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
-  <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
-  <header>
-    <div class="logo">
-      Fresh|Gear
-    </div>
-    <div class="menu">
-      <a href="#">About</a>
-      <a href="#">New Arrival</a>
-      <a href="#">Categories</a>
-      <a href="#" class="cart-link">Cart<span>4</span></a>
-    </div>
-  </header>
-  <section class="content-area home-page">
-    <div class="top-section">
-      <div class="product">
-        <div class="circle">
-          <img src="img/products/adidas-yeezy-boost-350-white.png">
-        </div>
-      </div>
-      <div class="titles">
-        <h3>Yeezy</h3>
-        <h1>Boost 350</h1>
-      </div>
-    </div>
-  </section>
+@layout('layouts/main')
 
-  <section id="cart-popup">
-      <div class="cart-title">
-        <div class="title">My Cart</div>
-      </div>
-    <div class="cart-items">
-      <div class="item-container">
-      <div class="item">
+@section('title')
+Fresh|Gear - Top Kicks
+@endsection
+@section('content')
+  <div class="top-section">
+    <div class="product">
+      <div class="circle">
         <img src="img/products/adidas-yeezy-boost-350-white.png">
-        <div class="delete-btn">
-          <div class="circle">X</div>
-        </div>
-      </div>
-      </div>
-      <div class="item-container">
-      <div class="item">
-        <img src="img/products/adidas-yeezy-boost-350-white.png">
-        <div class="delete-btn">
-          <div class="circle">X</div>
-        </div>
-      </div>
-      </div>
-      <div class="item-container">
-      <div class="item">
-        <img src="img/products/adidas-yeezy-boost-350-white.png">
-        <div class="delete-btn">
-          <div class="circle">X</div>
-        </div>
-      </div>
-      </div>
-      <div class="item-container">
-      <div class="item">
-        <img src="img/products/adidas-yeezy-boost-350-white.png">
-        <div class="delete-btn">
-          <div class="circle">X</div>
-        </div>
-      </div>
-      </div>
-      <div class="item-container">
-      <div class="item">
-        <img src="img/products/adidas-yeezy-boost-350-white.png">
-        <div class="delete-btn">
-          <div class="circle">X</div>
-        </div>
-      </div>
-      </div>
-      <div class="item-container">
-      <div class="item">
-        <img src="img/products/adidas-yeezy-boost-350-white.png">
-        <div class="delete-btn">
-          <div class="circle">X</div>
-        </div>
-      </div>
       </div>
     </div>
-    <div class="product-total">
-      <div class="inside-container">
-        <div class="title">Total</div>
-        <div class="number">x4</div>
-      </div>
+    <div class="titles">
+      <h3>Yeezy</h3>
+      <h1>Boost 350</h1>
     </div>
-    <div class="price-total">
-      <div class="inside-container">
-        <div class="title">Total</div>
-        <div class="number">$3,000</div>
-      </div>
-    </div>
-    <div class="checkout">
-      <div class="title">Checkout</div>
-      <span class="ti-shopping-cart"></span>
-    </div>
-  </section>
-  
+  </div>
+@endsection
 
-  <script src="js/dist/vendors~FirstComp.js"></script>
-  <script src="js/dist/FirstComp.js"></script>
-</body>
-</html>
+@section('javascript')
+  <script>
+    console.log('Hey guys')
+  </script>
+@endsection
