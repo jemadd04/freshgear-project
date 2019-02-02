@@ -1,8 +1,11 @@
 'use strict'
 
 class PageController {
-  about() {
-    return '<h1>This is the about page</h1>';
+  home({view}) {
+    return view.render('pages/home');
+  }
+  about({view}) {
+    return view.render('pages/about');
   }
 }
 

@@ -1,0 +1,34 @@
+@layout('layouts/main')
+
+@section('title')
+Fresh|Gear - All Products
+@endsection
+@section('content')
+<section class="content-area products-all-page">
+  <div class="filter-section">
+    filter
+  </div>
+  <div class="all-products-grid">
+    @each(product in products)
+    <div class="product-wrap">
+        <div class="product">
+          <div class="circle">
+            <img src="img/products/adidas-yeezy-boost-350-white.png">
+          </div>
+        </div>
+        <div class="title">Boost 350 White</div>
+        <div class="price">$350</div>
+      </div>
+    @endeach
+    
+    
+    
+  </div>
+</section>
+@endsection
+
+@section('javascript')
+  <script>
+    console.log('Hey guys')
+  </script>
+@endsection

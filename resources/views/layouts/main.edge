@@ -11,20 +11,19 @@
 <body>
   <header>
     <div class="logo">
-      Fresh|Gear
+      <a href="/">Fresh|Gear</a>
     </div>
     <div class="menu">
       <a href="#">About</a>
       <a href="#">New Arrival</a>
-      <a href="#">Categories</a>
+      <a href="/products">All Products</a>
       <a href="#" class="cart-link">Cart<span>4</span></a>
     </div>
   </header>
-  <section class="content-area home-page">
+  
     @!section('content')
-  </section>
 
-  <section id="cart-popup">
+  <section id="cart-popup" class="">
       <div class="cart-title">
         <div class="title">My Cart</div>
       </div>
@@ -99,5 +98,6 @@
 
   <script src="js/dist/vendors~FirstComp.js"></script>
   <script src="js/dist/FirstComp.js"></script>
+  @!section('javascript')
 </body>
 </html>
