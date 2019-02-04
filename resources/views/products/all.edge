@@ -6,7 +6,54 @@ Fresh|Gear - All Products
 @section('content')
 <section class="content-area products-all-page">
   <div class="filter-section">
-    filter
+    {{--  Gender filter  --}}
+    <div class="filter">
+      <input type="checkbox" id="gender-options" class="toggle" />
+      <label class="title" for="gender-options">Gender</label>
+      <div class="content">
+        <div class="gender">
+          <div class="option">Male</div>
+          <div class="option">Female</div>
+        </div>
+      </div>
+    </div>
+    {{--  Brand filter  --}}
+    <div class="filter">
+      <input type="checkbox" id="brand-options" class="toggle" />
+      <label for="brand-options" class="title">Brand</label>
+      <div class="content">
+        <div class="gender">
+          <div class="option">Adidas</div>
+          <div class="option">Nike</div>
+          <div class="option">Reebok</div>
+          <div class="option">Gucci</div>
+          <div class="option">New Balance</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter">
+      <input type="checkbox" id="size-options" class="toggle" />
+      <label for="size-options" class="title">Size</label>
+      <div class="content">
+        <div class="gender">
+          <div class="option">6</div>
+          <div class="option">6.5</div>
+          <div class="option">7</div>
+          <div class="option">7.5</div>
+          <div class="option">8</div>
+          <div class="option">8.5</div>
+          <div class="option">9</div>
+          <div class="option">9.5</div>
+          <div class="option">10</div>
+          <div class="option">10.5</div>
+          <div class="option">11</div>
+          <div class="option">11.5</div>
+          <div class="option">12</div>
+        </div>
+      </div>
+    </div>
+    
   </div>
   <div class="all-products-grid">
     @each(product in products)
