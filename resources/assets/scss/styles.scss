@@ -2,7 +2,8 @@
 @import "reset";
 @import "pages/home";
 @import "pages/about";
-@import "products/_all";
+@import "products/all";
+@import "account/login_register";
 
 
 body {
@@ -291,6 +292,5 @@ header {
 
 .box-container {
   background: white;
-  border-radius: 10px;
   padding: 80px 20px;
 }

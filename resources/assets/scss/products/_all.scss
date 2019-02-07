@@ -5,11 +5,28 @@
   height: 100vh;
   overflow: hidden;
   .filter-section {
+    padding: 0 20px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0 20px 200px;
+    button {
+      background: #fff;
+      padding: 1rem;
+      display: block;
+      color: black;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      width: 100%;
+      border: none;
+    }
     .toggle {
       display: none;
       &:checked {
         & + .title + .content {
-          max-height: 500px;
+          max-height: 200px;
+          overflow-x: hidden;
         }
         & + .title:before {
           transform: rotate(90deg) !important;
@@ -20,7 +37,6 @@
     .filter {
       position: relative;
       margin-bottom: 2rem;
-      padding: 0 20px;
     }
 
     .title, .content {
@@ -36,6 +52,7 @@
       color: black;
       font-weight: 700;
       margin-bottom: 1rem;
+      cursor: pointer;
     }
     
     .title:after, .title:before {
@@ -61,6 +78,36 @@
         list-style: none;
         text-align: center;
       }
+      .brand {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        list-style: none;
+        text-align: center;
+      }
+      .price {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        list-style: none;
+        text-align: center;
+        .option:hover {
+          background: #ecf0f3 !important;
+          font-size: 1.2rem;
+        }
+        input {
+          width: 100%;
+        }
+      }
+      .size {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        list-style: none;
+        text-align: center;
+        max-height: 200px;
+        overflow-y: scroll;
+      }
       .option {
         border: 1px solid #fff;
         padding: 10px;
@@ -70,6 +117,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
         &:hover, &.selected {
           background: red;
           color: white;
