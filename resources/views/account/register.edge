@@ -1,15 +1,26 @@
 @layout('layouts/main')
 
 @section('title')
-Fresh|Gear - Top Kicks
+Fresh|Gear - Register
 @endsection
 
 @section('content')
-<section class="content-area about-page">
+<section class="content-area login_register-page">
   <div class="container">
     <div class="box-container">
-      <h1>About</h1>
-      <p>Lorem ipsum dolor amet farm-to-table craft beer subway tile, unicorn master cleanse skateboard bespoke la croix small batch taiyaki celiac vaporware green juice pour-over. XOXO snackwave austin, tumeric seitan yr man braid cred godard tattooed wolf. Sriracha taxidermy 90's chicharrones intelligentsia gochujang. 3 wolf moon meggings glossier, cold-pressed pour-over tbh iPhone flexitarian schlitz hashtag hot chicken everyday carry pop-up cloud bread. Pug squid gentrify biodiesel messenger bag cold-pressed microdosing poutine craft beer drinking vinegar knausgaard actually skateboard. Farm-to-table drinking vinegar mixtape cornhole meh cloud bread yuccie green juice quinoa everyday carry butcher copper mug gochujang. Vegan stumptown banjo pour-over unicorn adaptogen keytar beard occupy PBR&B kitsch cloud bread franzen cliche.</p>
+      <h2>Register</h2>
+      <div class="login-grid register">
+        <form action="" method="POST">
+          <input type="email" name="email" placeholder="email"/>
+          <input type="password" name="password" placeholder="password"/>
+
+          <button type="submit">Log In</button>
+        </form>
+        <div class="line"></div>
+        
+      <div class="footer">
+        Already have an account? <a href="/login">Login</a>
+      </div>
     </div>
     
   </div>
